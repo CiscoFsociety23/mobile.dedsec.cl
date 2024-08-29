@@ -61,6 +61,7 @@
             android:layout_marginTop="15dp">
 
             <TextView
+                android:id="@+id/users_created"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/num_users_created"
@@ -71,6 +72,7 @@
                 android:layout_marginEnd="20dp"/>
 
             <TextView
+                android:id="@+id/users_validated"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/num_users_validated"
@@ -83,6 +85,7 @@
     </TableLayout>
 
     <Button
+        android:id="@+id/btn_ingress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -92,6 +95,7 @@
         android:layout_marginTop="40dp"/>
 
     <Button
+        android:id="@+id/btn_validate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
