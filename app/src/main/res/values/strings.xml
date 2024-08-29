@@ -6,5 +6,7 @@
     <string name="users_validated">Usuarios Validados</string>
     <string name="num_users_created">41</string>
     <string name="num_users_validated">38</string>
+    <string name="btn_ingress">Ingresar Usuario</string>
+    <string name="btn_validate">Validar Usuario</string>
 
 </resources>

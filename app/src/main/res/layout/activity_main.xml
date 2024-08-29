@@ -81,4 +81,23 @@
                 android:layout_marginStart="25dp" />
         </TableRow>
     </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_ingress"
+        android:textColor="@color/dedsec_dark"
+        android:backgroundTint="@color/dedsec_aux"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_validate"
+        android:textColor="@color/dedsec_dark"
+        android:backgroundTint="@color/dedsec_aux"
+        android:layout_marginTop="10dp"/>
+
 </LinearLayout>
