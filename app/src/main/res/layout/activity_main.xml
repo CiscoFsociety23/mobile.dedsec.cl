@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@color/dedsec_dark" >
 
@@ -18,4 +19,66 @@
         android:textSize="40sp"
         android:textAlignment="center" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_description"
+        android:textColor="@color/dedsec_light"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TableRow
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/users_created"
+                android:textColor="@color/dedsec_light"
+                android:textSize="17sp"
+                android:fontFamily="monospace"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/users_validated"
+                android:textColor="@color/dedsec_light"
+                android:textSize="17sp"
+                android:fontFamily="monospace"
+                android:layout_marginStart="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num_users_created"
+                android:textColor="@color/dedsec_light"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num_users_validated"
+                android:textAlignment="center"
+                android:textColor="@color/dedsec_light"
+                android:textSize="25sp"
+                android:fontFamily="monospace"
+                android:layout_marginStart="25dp" />
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
