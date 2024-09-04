@@ -104,4 +104,10 @@
         android:backgroundTint="@color/dedsec_aux"
         android:layout_marginTop="10dp"/>
 
+    <CheckBox
+        android:id="@+id/checkbox_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox Example" />
+
 </LinearLayout>
