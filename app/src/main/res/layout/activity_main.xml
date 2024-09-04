@@ -133,4 +133,13 @@
         android:layout_height="wrap_content"
         android:indeterminate="true" />
 
+    <RatingBar
+        android:id="@+id/rating_bar_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+
+
 </LinearLayout>
