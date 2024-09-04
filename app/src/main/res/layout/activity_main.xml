@@ -127,4 +127,10 @@
             android:text="Option 2" />
     </RadioGroup>
 
+    <ProgressBar
+        android:id="@+id/progress_bar_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
 </LinearLayout>
