@@ -9,101 +9,6 @@
     tools:context=".MainActivity"
     android:background="@color/dedsec_dark" >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textColor="@color/dedsec_light"
-        android:layout_marginTop="25dp"
-        android:fontFamily="monospace"
-        android:textSize="40sp"
-        android:textAlignment="center" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_description"
-        android:textColor="@color/dedsec_light"
-        android:layout_marginTop="40dp"
-        android:fontFamily="monospace"
-        android:textSize="20sp"
-        android:textAlignment="center" />
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
-
-        <TableRow
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/users_created"
-                android:textColor="@color/dedsec_light"
-                android:textSize="17sp"
-                android:fontFamily="monospace"
-                android:layout_marginEnd="20dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/users_validated"
-                android:textColor="@color/dedsec_light"
-                android:textSize="17sp"
-                android:fontFamily="monospace"
-                android:layout_marginStart="20dp" />
-        </TableRow>
-
-        <TableRow
-            android:gravity="center"
-            android:layout_marginTop="15dp">
-
-            <TextView
-                android:id="@+id/users_created"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/num_users_created"
-                android:textColor="@color/dedsec_light"
-                android:textSize="25sp"
-                android:textAlignment="center"
-                android:fontFamily="monospace"
-                android:layout_marginEnd="20dp"/>
-
-            <TextView
-                android:id="@+id/users_validated"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/num_users_validated"
-                android:textAlignment="center"
-                android:textColor="@color/dedsec_light"
-                android:textSize="25sp"
-                android:fontFamily="monospace"
-                android:layout_marginStart="25dp" />
-        </TableRow>
-    </TableLayout>
-
-    <Button
-        android:id="@+id/btn_ingress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/btn_ingress"
-        android:textColor="@color/dedsec_dark"
-        android:backgroundTint="@color/dedsec_aux"
-        android:layout_marginTop="40dp"/>
-
-    <Button
-        android:id="@+id/btn_validate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/btn_validate"
-        android:textColor="@color/dedsec_dark"
-        android:backgroundTint="@color/dedsec_aux"
-        android:layout_marginTop="10dp"/>
-
     <CheckBox
         android:id="@+id/checkbox_example"
         android:layout_width="wrap_content"
@@ -145,5 +50,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher_foreground" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
