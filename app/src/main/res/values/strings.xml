@@ -2,11 +2,5 @@
 
     <string name="app_name">Dedsec Mobile</string>
     <string name="app_description">Aplicaion orientada a la administracion de usuarios para Dedsec Corp</string>
-    <string name="users_created">Usuarios Creados</string>
-    <string name="users_validated">Usuarios Validados</string>
-    <string name="num_users_created">41</string>
-    <string name="num_users_validated">38</string>
-    <string name="btn_ingress">Ingresar Usuario</string>
-    <string name="btn_validate">Validar Usuario</string>
 
 </resources>
