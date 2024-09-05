@@ -29,6 +29,61 @@
         android:textSize="20sp"
         android:textAlignment="center" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_email"
+        android:textColor="@color/dedsec_light"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textAlignment="center" />
 
+    <EditText
+        android:id="@+id/inputUserEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email_hint"
+        android:background="@color/dedsec_light"
+        android:textColor="@color/dedsec_aux"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_passwd"
+        android:textColor="@color/dedsec_light"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/inputUserPasswd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/dedsec_light"
+        android:textColor="@color/dedsec_aux"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_ingress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_ingress"
+        android:paddingVertical="5dp"
+        android:backgroundTint="@color/dedsec_aux"
+        android:textColor="@color/dedsec_dark"
+        android:paddingHorizontal="10dp"/>
 
 </LinearLayout>
