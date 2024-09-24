@@ -29,79 +29,63 @@
         android:textSize="20sp"
         android:textAlignment="center" />
 
-    <TableLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
+        android:text="@string/label_email"
+        android:textColor="@color/dedsec_light"
+        android:layout_marginTop="100dp"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textAlignment="center" />
 
-        <TableRow
-            android:gravity="center">
+    <EditText
+        android:id="@+id/inputUserEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email_hint"
+        android:background="@color/dedsec_light"
+        android:textColor="@color/dedsec_aux"
+        android:inputType="textEmailAddress"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/users_created"
-                android:textColor="@color/dedsec_light"
-                android:textSize="17sp"
-                android:fontFamily="monospace"
-                android:layout_marginEnd="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_passwd"
+        android:textColor="@color/dedsec_light"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textAlignment="center" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/users_validated"
-                android:textColor="@color/dedsec_light"
-                android:textSize="17sp"
-                android:fontFamily="monospace"
-                android:layout_marginStart="20dp" />
-        </TableRow>
-
-        <TableRow
-            android:gravity="center"
-            android:layout_marginTop="15dp">
-
-            <TextView
-                android:id="@+id/users_created"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/num_users_created"
-                android:textColor="@color/dedsec_light"
-                android:textSize="25sp"
-                android:textAlignment="center"
-                android:fontFamily="monospace"
-                android:layout_marginEnd="20dp"/>
-
-            <TextView
-                android:id="@+id/users_validated"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/num_users_validated"
-                android:textAlignment="center"
-                android:textColor="@color/dedsec_light"
-                android:textSize="25sp"
-                android:fontFamily="monospace"
-                android:layout_marginStart="25dp" />
-        </TableRow>
-    </TableLayout>
+    <EditText
+        android:id="@+id/inputUserPasswd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/dedsec_light"
+        android:textColor="@color/dedsec_aux"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/btn_ingress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         android:text="@string/btn_ingress"
-        android:textColor="@color/dedsec_dark"
+        android:paddingVertical="5dp"
         android:backgroundTint="@color/dedsec_aux"
-        android:layout_marginTop="40dp"/>
-
-    <Button
-        android:id="@+id/btn_validate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/btn_validate"
         android:textColor="@color/dedsec_dark"
-        android:backgroundTint="@color/dedsec_aux"
-        android:layout_marginTop="10dp"/>
+        android:paddingHorizontal="10dp"/>
 
 </LinearLayout>
