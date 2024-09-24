@@ -1,5 +1,6 @@
 package com.dedsec.dedsec_mobile;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -104,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
             }
             if (status) {
                 Toast.makeText(MainActivity.this, "Bienvenido!!!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, UserPanel.class);
+                startActivity(intent);
             } else {
                 Toast.makeText(MainActivity.this, "Credenciales invalidas", Toast.LENGTH_LONG).show();
             }
