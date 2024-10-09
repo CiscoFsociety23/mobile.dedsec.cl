@@ -1,12 +1,13 @@
 <resources>
 
     <string name="app_name">Dedsec Mobile</string>
-    <string name="app_description">Aplicaion orientada a la administracion de usuarios para Dedsec Corp</string>
 
     <string name="label_email">Correo Electronico</string>
     <string name="label_passwd">Contraseña</string>
-
     <string name="email_hint">usuario@dominio.com</string>
     <string name="btn_ingress">Ingresar</string>
+
+    <string name="geo_service">Geo Service</string>
+    <string name="btn_ingress_map">Ingresar</string>
 
 </resources>
