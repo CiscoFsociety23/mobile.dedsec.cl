@@ -10,4 +10,7 @@
     <string name="geo_service">Geo Service</string>
     <string name="btn_ingress_map">Ingresar</string>
 
+    <string name="recycler">Recycler View</string>
+    <string name="btn_ingress_recycler">Ingresar</string>
+
 </resources>
