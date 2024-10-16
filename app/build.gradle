@@ -39,10 +39,15 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 
+    // Para servicio de mapa
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.4'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
     implementation 'org.osmdroid:osmdroid-android:6.1.8'
     implementation 'org.osmdroid:osmdroid-wms:6.1.11'
+
+    // Para cargar imágenes
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
 }

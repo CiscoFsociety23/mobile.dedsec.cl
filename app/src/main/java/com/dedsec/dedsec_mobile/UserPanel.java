@@ -3,20 +3,13 @@ package com.dedsec.dedsec_mobile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class UserPanel extends AppCompatActivity {
 
@@ -36,6 +29,7 @@ public class UserPanel extends AppCompatActivity {
         });
 
         geo_service_view();
+        recycler_view();
     }
 
     private void geo_service_view(){
@@ -44,6 +38,17 @@ public class UserPanel extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent activity = new Intent(UserPanel.this, GeoService.class);
+                startActivity(activity);
+            }
+        });
+    }
+
+    private void recycler_view(){
+        button = findViewById(R.id.btn_ingress_recycler);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activity = new Intent(UserPanel.this, Recycler_View.class);
                 startActivity(activity);
             }
         });
