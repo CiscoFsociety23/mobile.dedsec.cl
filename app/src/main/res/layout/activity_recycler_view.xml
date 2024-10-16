@@ -5,15 +5,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/main"
+    android:background="@color/dedsec_dark"
     android:padding="16dp">
+
     <Button
         android:id="@+id/btnSelectImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:paddingVertical="5dp"
+        android:backgroundTint="@color/dedsec_aux"
+        android:textColor="@color/dedsec_dark"
+        android:paddingHorizontal="10dp"
         android:text="Seleccionar Imágen" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="16dp"/>
+
 </LinearLayout>
