@@ -30,6 +30,7 @@ public class UserPanel extends AppCompatActivity {
 
         geo_service_view();
         recycler_view();
+        media_service();
     }
 
     private void geo_service_view(){
@@ -49,6 +50,17 @@ public class UserPanel extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent activity = new Intent(UserPanel.this, Recycler_View.class);
+                startActivity(activity);
+            }
+        });
+    }
+
+    private void media_service(){
+        button = findViewById(R.id.btn_ingress_media_service);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activity = new Intent(UserPanel.this, VideoService.class);
                 startActivity(activity);
             }
         });
