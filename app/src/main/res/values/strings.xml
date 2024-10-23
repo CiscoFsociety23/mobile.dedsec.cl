@@ -13,4 +13,9 @@
     <string name="recycler">Image Service</string>
     <string name="btn_ingress_recycler">Ingresar</string>
 
+    <string name="mediaservice">Media Service</string>
+    <string name="btn_ingress_mediaservice">Ingresar</string>
+
+    <string name="btn_reproducir">Reproducir Sonido</string>
+
 </resources>

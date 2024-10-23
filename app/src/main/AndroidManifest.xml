@@ -19,6 +19,9 @@
         android:theme="@style/Theme.DedsecMobile"
         tools:targetApi="31">
         <activity
+            android:name=".VideoService"
+            android:exported="false" />
+        <activity
             android:name=".Recycler_View"
             android:exported="false" />
         <activity

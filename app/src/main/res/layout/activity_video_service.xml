@@ -7,4 +7,32 @@
     android:layout_height="match_parent"
     tools:context=".VideoService">
 
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="390dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/reproducir"
+        android:text="@string/btn_reproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
