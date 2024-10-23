@@ -47,8 +47,8 @@ public class VideoService extends AppCompatActivity {
 
         //Obtengo la configuración del WebView
         WebSettings webSettings = webView.getSettings();
-
         webSettings.setJavaScriptEnabled(true);
+
         //Agrego la URL del Video en formato embed
         String videoUrl = "https://www.youtube.com/embed/QtZPjL_CbQI";
 

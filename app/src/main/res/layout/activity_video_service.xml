@@ -5,7 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VideoService">
+    tools:context=".VideoService"
+    android:background="@color/dedsec_dark" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/dedsec_light"
+        android:fontFamily="cursive"
+        android:textSize="40sp"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <VideoView
         android:id="@+id/videoView"
@@ -30,6 +44,8 @@
         android:text="@string/btn_reproducir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/dedsec_aux"
+        android:textColor="@color/dedsec_dark"
         android:layout_marginTop="310dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
