@@ -31,6 +31,7 @@ public class UserPanel extends AppCompatActivity {
         geo_service_view();
         recycler_view();
         media_service();
+        crud_sqlite();
     }
 
     private void geo_service_view(){
@@ -61,6 +62,17 @@ public class UserPanel extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent activity = new Intent(UserPanel.this, VideoService.class);
+                startActivity(activity);
+            }
+        });
+    }
+
+    private  void crud_sqlite(){
+        button = findViewById(R.id.btn_sqlite_service);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent activity = new Intent(UserPanel.this, CrudSQLite.class);
                 startActivity(activity);
             }
         });

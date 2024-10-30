@@ -19,6 +19,9 @@
         android:theme="@style/Theme.DedsecMobile"
         tools:targetApi="31">
         <activity
+            android:name=".CrudSQLite"
+            android:exported="false" />
+        <activity
             android:name=".VideoService"
             android:exported="false" />
         <activity
