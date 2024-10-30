@@ -4,10 +4,16 @@
 
     <string name="label_email">Correo Electronico</string>
     <string name="label_passwd">Contraseña</string>
+
     <string name="email_hint">usuario@dominio.com</string>
+    <string name="nombre_hint">Nombre</string>
+    <string name="description_hint">Description</string>
 
     <string name="btn_ingress">Ingresar</string>
     <string name="btn_reproducir">Reproducir Sonido</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_actualizar">Actualizar</string>
+    <string name="btn_eliminar">Eliminar</string>
 
     <string name="geo_service">Geo Service</string>
     <string name="recycler">Image Service</string>
