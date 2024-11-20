@@ -4,10 +4,14 @@
 
     <string name="label_email">Correo Electronico</string>
     <string name="label_passwd">Contraseña</string>
+    <string name="label_name">Nombres</string>
+    <string name="label_lastname">Apellidos</string>
 
     <string name="email_hint">usuario@dominio.com</string>
     <string name="nombre_hint">Nombre</string>
     <string name="description_hint">Description</string>
+    <string name="name_hint">Nombres</string>
+    <string name="lastname_hint">Apellidos</string>
 
     <string name="btn_ingress">Ingresar</string>
     <string name="btn_reproducir">Reproducir Sonido</string>

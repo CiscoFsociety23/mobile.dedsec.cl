@@ -134,6 +134,7 @@ proguard/
 *.swp
 
 # Keystore files
+env.java
 
 # Google Services (e.g. APIs or Firebase)
 # google-services.json

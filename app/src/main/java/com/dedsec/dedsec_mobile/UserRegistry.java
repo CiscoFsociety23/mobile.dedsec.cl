@@ -8,11 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,65 +19,59 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
-public class MainActivity extends AppCompatActivity {
+public class UserRegistry extends AppCompatActivity {
 
-    private Button btn;
+    private Button button;
+    private EditText usr_name;
+    private EditText usr_lastname;
     private EditText usr_email;
     private EditText usr_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        setContentView(R.layout.activity_user_registry);
 
-        btnRegistryActivity();
-        validateUser();
+        btnCreateUser();
     }
 
-    private void btnRegistryActivity(){
-        btn = findViewById(R.id.btn_registry);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public  void onClick(View view){
-                Intent intent = new Intent(MainActivity.this, UserRegistry.class);
-                startActivity(intent);
-            }
-        });
-    }
-
-    private void validateUser() {
-        btn = findViewById(R.id.btn_ingress);
-        btn.setOnClickListener(new View.OnClickListener() {
+    private void btnCreateUser(){
+        button = findViewById(R.id.btn_registry);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                usr_name = findViewById(R.id.inputUserName);
+                usr_lastname = findViewById(R.id.inputUserLastName);
                 usr_email = findViewById(R.id.inputUserEmail);
                 usr_password = findViewById(R.id.inputUserPasswd);
-                String email = usr_email.getText().toString();
+                String name = usr_name.getText().toString();
+                String lastname = usr_lastname.getText().toString();
+                String correo = usr_email.getText().toString();
                 String passwd = usr_password.getText().toString();
-                new PostValidateUser().execute(email, passwd);
+                new PostCreateUser().execute(name, lastname, correo, passwd);
             }
         });
     }
 
-    private class PostValidateUser extends AsyncTask<String, Void, JSONObject> {
+    private class PostCreateUser extends AsyncTask<String, Void, JSONObject> {
 
         @Override
         protected JSONObject doInBackground(String... params) {
-            String email = params[0];
-            String password = params[1];
+            String name = params[0];
+            String lastname = params[1];
+            String email = params[2];
+            String password = params[3];
             try {
                 JSONObject postData = new JSONObject();
+                postData.put("name", name);
+                postData.put("lastname", lastname);
                 postData.put("email", email);
                 postData.put("passwd", password);
+                postData.put("profile", 2);
 
-                URL url = new URL("https://dedsec.cl/api-mars/users/check");
+                URL url = new URL("https://dedsec.cl/api-mars/users/create");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setRequestProperty("Content-Type", "application/json");
@@ -109,19 +99,23 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(JSONObject result) {
             Boolean status = null;
+            String confirmation = "Usuario creado";
             try {
-                String value = result.getString("access");
-                status = Boolean.parseBoolean(value);
+                String value = result.getString("Message");
+                if(confirmation.equals(value)) {
+                    status = true;
+                } else {
+                    status = false;
+                }
             } catch (JSONException e) {
                 status = false;
             }
             if (status) {
-                Toast.makeText(MainActivity.this, "Bienvenido!!!", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, UserPanel.class);
-                startActivity(intent);
+                Toast.makeText(UserRegistry.this, "Cuenta creada, revise su correo para validar la cuenta", Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(MainActivity.this, "Credenciales invalidas", Toast.LENGTH_LONG).show();
+                Toast.makeText(UserRegistry.this, "No se pudo crear la cuenta", Toast.LENGTH_LONG).show();
             }
         }
     }
+
 }
