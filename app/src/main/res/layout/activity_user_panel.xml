@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp" />
+        android:layout_marginTop="100dp" />
 
     <Button
         android:id="@+id/btn_ingress_map"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
-        android:text="@string/btn_ingress_map"
+        android:text="@string/btn_ingress"
         android:paddingVertical="5dp"
         android:backgroundTint="@color/dedsec_aux"
         android:textColor="@color/dedsec_dark"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp" />
+        android:layout_marginTop="50dp" />
 
     <Button
         android:id="@+id/btn_ingress_recycler"
@@ -64,7 +64,57 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
-        android:text="@string/btn_ingress_recycler"
+        android:text="@string/btn_ingress"
+        android:paddingVertical="5dp"
+        android:backgroundTint="@color/dedsec_aux"
+        android:textColor="@color/dedsec_dark"
+        android:paddingHorizontal="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mediaservice"
+        android:textColor="@color/dedsec_light"
+        android:fontFamily="monospace"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btn_ingress_media_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_ingress"
+        android:paddingVertical="5dp"
+        android:backgroundTint="@color/dedsec_aux"
+        android:textColor="@color/dedsec_dark"
+        android:paddingHorizontal="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crud_sqlite"
+        android:textColor="@color/dedsec_light"
+        android:fontFamily="monospace"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/btn_sqlite_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/btn_ingress"
         android:paddingVertical="5dp"
         android:backgroundTint="@color/dedsec_aux"
         android:textColor="@color/dedsec_dark"

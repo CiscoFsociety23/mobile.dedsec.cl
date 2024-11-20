@@ -26,7 +26,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_ingress;
+    private Button btn;
     private EditText usr_email;
     private EditText usr_password;
 
@@ -41,12 +41,24 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        btnRegistryActivity();
         validateUser();
     }
 
+    private void btnRegistryActivity(){
+        btn = findViewById(R.id.btn_registry);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public  void onClick(View view){
+                Intent intent = new Intent(MainActivity.this, UserRegistry.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     private void validateUser() {
-        btn_ingress = findViewById(R.id.btn_ingress);
-        btn_ingress.setOnClickListener(new View.OnClickListener() {
+        btn = findViewById(R.id.btn_ingress);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 usr_email = findViewById(R.id.inputUserEmail);
