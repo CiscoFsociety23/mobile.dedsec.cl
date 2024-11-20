@@ -14,6 +14,7 @@
     <string name="btn_agregar">Agregar</string>
     <string name="btn_actualizar">Actualizar</string>
     <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_registry">Crear Cuenta</string>
 
     <string name="geo_service">Geo Service</string>
     <string name="recycler">Image Service</string>

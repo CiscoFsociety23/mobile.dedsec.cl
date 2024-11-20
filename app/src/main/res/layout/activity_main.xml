@@ -78,4 +78,16 @@
         android:textColor="@color/dedsec_dark"
         android:paddingHorizontal="10dp"/>
 
+    <Button
+        android:id="@+id/btn_registry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/btn_registry"
+        android:paddingVertical="5dp"
+        android:backgroundTint="@color/dedsec_light"
+        android:textColor="@color/dedsec_contrast"
+        android:paddingHorizontal="10dp" />
+
 </LinearLayout>
