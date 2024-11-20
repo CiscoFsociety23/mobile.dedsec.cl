@@ -24,5 +24,6 @@
     <string name="recycler">Image Service</string>
     <string name="mediaservice">Media Service</string>
     <string name="crud_sqlite">Crud SQLite</string>
+    <string name="firebase_integration">Integracion Firebase</string>
 
 </resources>
