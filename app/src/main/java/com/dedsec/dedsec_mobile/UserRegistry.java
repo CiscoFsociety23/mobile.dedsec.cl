@@ -50,7 +50,8 @@ public class UserRegistry extends AppCompatActivity {
                 String lastname = usr_lastname.getText().toString();
                 String correo = usr_email.getText().toString();
                 String passwd = usr_password.getText().toString();
-                new PostCreateUser().execute(name, lastname, correo, passwd);
+                String token = new env().token;
+                new PostCreateUser().execute(name, lastname, correo, passwd, token);
             }
         });
     }
@@ -63,10 +64,11 @@ public class UserRegistry extends AppCompatActivity {
             String lastname = params[1];
             String email = params[2];
             String password = params[3];
+            String token = params[4];
             try {
                 JSONObject postData = new JSONObject();
                 postData.put("name", name);
-                postData.put("lastname", lastname);
+                postData.put("lastName", lastname);
                 postData.put("email", email);
                 postData.put("passwd", password);
                 postData.put("profile", 2);
@@ -75,6 +77,7 @@ public class UserRegistry extends AppCompatActivity {
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("POST");
                 conn.setRequestProperty("Content-Type", "application/json");
+                conn.setRequestProperty("Authorization", "Bearer " + token);
                 conn.setDoOutput(true);
 
                 OutputStream os = new BufferedOutputStream(conn.getOutputStream());
@@ -112,6 +115,7 @@ public class UserRegistry extends AppCompatActivity {
             }
             if (status) {
                 Toast.makeText(UserRegistry.this, "Cuenta creada, revise su correo para validar la cuenta", Toast.LENGTH_LONG).show();
+                finish();
             } else {
                 Toast.makeText(UserRegistry.this, "No se pudo crear la cuenta", Toast.LENGTH_LONG).show();
             }
