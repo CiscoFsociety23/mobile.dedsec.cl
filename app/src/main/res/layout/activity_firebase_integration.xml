@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirebaseIntegration"
+    android:background="@color/dedsec_dark" >
+    
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="685dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/dedsec_light"
+            android:layout_marginTop="25dp"
+            android:fontFamily="cursive"
+            android:textSize="40sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/dedsec_light"
+            android:text="@string/control_animales"/>
+
+        <EditText
+            android:id="@+id/inputChipCode"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="@string/chipcode_hint"
+            android:background="@color/dedsec_light"
+            android:textColor="@color/dedsec_aux"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/inputPetName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="@string/petName_hint"
+            android:background="@color/dedsec_light"
+            android:textColor="@color/dedsec_aux"
+            android:inputType="text"/>
+
+        <Spinner
+            android:id="@+id/spPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/pet_sp"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/inputNameOwner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="@string/nameOwner_hint"
+            android:background="@color/dedsec_light"
+            android:textColor="@color/dedsec_aux"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/inputAddressOwner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="@string/addressOwner_hint"
+            android:background="@color/dedsec_light"
+            android:textColor="@color/dedsec_aux"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btn_sendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/btn_sendData"
+            android:paddingVertical="5dp"
+            android:backgroundTint="@color/dedsec_aux"
+            android:textColor="@color/dedsec_dark"
+            android:paddingHorizontal="10dp"/>
+
+        <Button
+            android:id="@+id/btn_loadData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_loadData"
+            android:paddingVertical="5dp"
+            android:backgroundTint="@color/dedsec_aux"
+            android:textColor="@color/dedsec_dark"
+            android:paddingHorizontal="10dp"/>
+
+        <ListView
+            android:id="@+id/listaPets"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
