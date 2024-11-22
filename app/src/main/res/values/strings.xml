@@ -12,6 +12,10 @@
     <string name="description_hint">Description</string>
     <string name="name_hint">Nombres</string>
     <string name="lastname_hint">Apellidos</string>
+    <string name="chipcode_hint">Ingrese el codigo del chip</string>
+    <string name="petName_hint">Ingrese el nombre de la mascota</string>
+    <string name="nameOwner_hint">Ingrese el nombre del dueño</string>
+    <string name="addressOwner_hint">Ingrese la direccion del dueño</string>
 
     <string name="btn_ingress">Ingresar</string>
     <string name="btn_reproducir">Reproducir Sonido</string>
@@ -19,10 +23,16 @@
     <string name="btn_actualizar">Actualizar</string>
     <string name="btn_eliminar">Eliminar</string>
     <string name="btn_registry">Crear Cuenta</string>
+    <string name="btn_sendData">Enviar Datos</string>
+    <string name="btn_loadData">Cargar Datos</string>
 
     <string name="geo_service">Geo Service</string>
     <string name="recycler">Image Service</string>
     <string name="mediaservice">Media Service</string>
     <string name="crud_sqlite">Crud SQLite</string>
+    <string name="firebase_integration">Integracion Firebase</string>
+
+    <string name="control_animales">Fomulario de ingreso de mascotas</string>
+    <string name="pet_sp">Mascota</string>
 
 </resources>

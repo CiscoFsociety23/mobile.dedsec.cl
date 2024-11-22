@@ -32,6 +32,7 @@ public class UserPanel extends AppCompatActivity {
         recycler_view();
         media_service();
         crud_sqlite();
+        firebase_integration();
     }
 
     private void geo_service_view(){
@@ -67,13 +68,24 @@ public class UserPanel extends AppCompatActivity {
         });
     }
 
-    private  void crud_sqlite(){
+    private void crud_sqlite(){
         button = findViewById(R.id.btn_sqlite_service);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
                 Intent activity = new Intent(UserPanel.this, CrudSQLite.class);
                 startActivity(activity);
+            }
+        });
+    }
+
+    private void firebase_integration(){
+        button = findViewById(R.id.btn_firebase_integration);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserPanel.this, FirebaseIntegration.class);
+                startActivity(intent);
             }
         });
     }
