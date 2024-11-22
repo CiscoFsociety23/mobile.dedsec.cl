@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "545005723383",
+    "project_id": "dedsec-corp",
+    "storage_bucket": "dedsec-corp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545005723383:android:47d63a651234d19c697df2",
+        "android_client_info": {
+          "package_name": "com.dedsec.dedsec_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCycgXTE3M6ykvYqRPOFO2ggLwIEjIK6AE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
