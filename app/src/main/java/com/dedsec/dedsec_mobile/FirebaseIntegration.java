@@ -39,8 +39,6 @@ public class FirebaseIntegration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase_integration);
 
-        CargarLista();
-
         db = FirebaseFirestore.getInstance();
 
         inputChipCode = findViewById(R.id.inputChipCode);
@@ -84,7 +82,7 @@ public class FirebaseIntegration extends AppCompatActivity {
                 });
     }
 
-    public void CargarLista(){
+    public void CargarLista(View view){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("/pets")
                 .get()
