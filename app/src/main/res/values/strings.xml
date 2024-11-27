@@ -31,6 +31,7 @@
     <string name="mediaservice">Media Service</string>
     <string name="crud_sqlite">Crud SQLite</string>
     <string name="firebase_integration">Integracion Firebase</string>
+    <string name="mqtt_integration">Integracion MQTT</string>
 
     <string name="control_animales">Fomulario de ingreso de mascotas</string>
     <string name="pet_sp">Mascota</string>
