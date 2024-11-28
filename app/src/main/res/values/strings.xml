@@ -16,6 +16,7 @@
     <string name="petName_hint">Ingrese el nombre de la mascota</string>
     <string name="nameOwner_hint">Ingrese el nombre del dueño</string>
     <string name="addressOwner_hint">Ingrese la direccion del dueño</string>
+    <string name="mqtt_hint">Ingrese un mensaje</string>
 
     <string name="btn_ingress">Ingresar</string>
     <string name="btn_reproducir">Reproducir Sonido</string>
@@ -25,6 +26,7 @@
     <string name="btn_registry">Crear Cuenta</string>
     <string name="btn_sendData">Enviar Datos</string>
     <string name="btn_loadData">Cargar Datos</string>
+    <string name="btn_mqttSendData">Enviar Mensaje</string>
 
     <string name="geo_service">Geo Service</string>
     <string name="recycler">Image Service</string>
@@ -35,5 +37,6 @@
 
     <string name="control_animales">Fomulario de ingreso de mascotas</string>
     <string name="pet_sp">Mascota</string>
+    <string name="mqtt_message">Mensaje Recibido</string>
 
 </resources>

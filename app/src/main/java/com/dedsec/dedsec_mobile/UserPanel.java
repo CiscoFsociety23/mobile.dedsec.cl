@@ -33,6 +33,7 @@ public class UserPanel extends AppCompatActivity {
         media_service();
         crud_sqlite();
         firebase_integration();
+        mqtt_integration();
     }
 
     private void geo_service_view(){
@@ -85,6 +86,17 @@ public class UserPanel extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(UserPanel.this, FirebaseIntegration.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void mqtt_integration(){
+        button = findViewById(R.id.btn_mqtt_integration);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserPanel.this, MqttIntegration.class);
                 startActivity(intent);
             }
         });

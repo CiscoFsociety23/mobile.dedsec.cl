@@ -19,6 +19,9 @@
         android:theme="@style/Theme.DedsecMobile"
         tools:targetApi="31">
         <activity
+            android:name=".MqttIntegration"
+            android:exported="false" />
+        <activity
             android:name=".FirebaseIntegration"
             android:exported="false" />
         <activity
